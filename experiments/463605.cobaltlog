@@ -1,0 +1,30 @@
+Jobid: 463605
+qsub -n 8 -q CVD_Research -t 180 -A CVD_Research /home/zzli/.funcx/funcx-redis/worker_logs/submit_scripts/parsl.parsl.cobalt.1598411091.242788.submit
+Wed Aug 26 03:04:55 2020 +0000 (UTC) submitted with cwd set to: /gpfs/mira-home/zzli/tmp/redis-funcx/experiments
+2020-08-26 03:09:36,987 INFO: Starting Resource_Prologue
+2020-08-26 03:09:36,989 DEBUG: no enabling attribute found
+2020-08-26 03:09:36,990 INFO: Resource_Prologue finished with exit code 0
+Wed Aug 26 03:10:00 2020 +0000 (UTC) 
+Wed Aug 26 03:10:00 2020 +0000 (UTC) Command: '/home/zzli/.funcx/funcx-redis/worker_logs/submit_scripts/parsl.parsl.cobalt.1598411091.242788.submit'
+Wed Aug 26 03:10:00 2020 +0000 (UTC) 
+Wed Aug 26 03:10:00 2020 +0000 (UTC) Environment:
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_RESID=774
+Wed Aug 26 03:10:00 2020 +0000 (UTC) SHELL=/bin/bash
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_PROJECT=CVD_Research
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_PARTCORES=64
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_PARTNAME=3170,3172-3177,3309
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_JOBID=463605
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_STARTTIME=1598411359
+Wed Aug 26 03:10:00 2020 +0000 (UTC) LOGNAME=zzli
+Wed Aug 26 03:10:00 2020 +0000 (UTC) USER=zzli
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_ENDTIME=1598422159
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_PARTSIZE=8
+Wed Aug 26 03:10:00 2020 +0000 (UTC) HOME=/home/zzli
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_JOBSIZE=8
+Wed Aug 26 03:10:00 2020 +0000 (UTC) COBALT_QUEUE=CVD_Research
+Wed Aug 26 03:10:00 2020 +0000 (UTC) 
+Wed Aug 26 03:10:00 2020 +0000 (UTC) Info: stdin received from /dev/null
+Wed Aug 26 03:10:00 2020 +0000 (UTC) Info: stdout sent to /gpfs/mira-home/zzli/tmp/redis-funcx/experiments/463605.output
+Wed Aug 26 03:10:00 2020 +0000 (UTC) Info: stderr sent to /gpfs/mira-home/zzli/tmp/redis-funcx/experiments/463605.error
+Wed Aug 26 03:10:00 2020 +0000 (UTC) 
+Wed Aug 26 03:11:50 2020 +0000 (UTC) Info: task completed normally with an exit code of 1; initiating job cleanup and removal

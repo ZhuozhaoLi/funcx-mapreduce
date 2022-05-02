@@ -1,0 +1,16 @@
+
+*** FATAL CONFIG FILE ERROR ***
+Reading the configuration file, at line 8
+>>> 'appendfilename "/projects/APSDataAnalysis/zz/"'
+appendfilename can't be a path, just a filename
+
+*** FATAL CONFIG FILE ERROR ***
+Reading the configuration file, at line 8
+>>> 'appendfilename "/projects/APSDataAnalysis/zz/"'
+appendfilename can't be a path, just a filename
+
+*** FATAL CONFIG FILE ERROR ***
+Reading the configuration file, at line 8
+>>> 'appendfilename "/projects/APSDataAnalysis/zz/"'
+appendfilename can't be a path, just a filename
+Could not connect to Redis at 10.128.12.123:7000: Connection refused

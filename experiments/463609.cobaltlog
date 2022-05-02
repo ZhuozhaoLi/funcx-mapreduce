@@ -1,0 +1,30 @@
+Jobid: 463609
+qsub -n 8 -q CVD_Research -t 180 -A CVD_Research /home/zzli/.funcx/funcx-redis/worker_logs/submit_scripts/parsl.parsl.cobalt.1598412355.0566027.submit
+Wed Aug 26 03:25:57 2020 +0000 (UTC) submitted with cwd set to: /gpfs/mira-home/zzli/tmp/redis-funcx/experiments
+2020-08-26 03:26:21,832 INFO: Starting Resource_Prologue
+2020-08-26 03:26:21,834 DEBUG: no enabling attribute found
+2020-08-26 03:26:21,834 INFO: Resource_Prologue finished with exit code 0
+Wed Aug 26 03:26:42 2020 +0000 (UTC) 
+Wed Aug 26 03:26:42 2020 +0000 (UTC) Command: '/home/zzli/.funcx/funcx-redis/worker_logs/submit_scripts/parsl.parsl.cobalt.1598412355.0566027.submit'
+Wed Aug 26 03:26:42 2020 +0000 (UTC) 
+Wed Aug 26 03:26:42 2020 +0000 (UTC) Environment:
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_RESID=774
+Wed Aug 26 03:26:42 2020 +0000 (UTC) SHELL=/bin/bash
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_PROJECT=CVD_Research
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_PARTCORES=64
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_PARTNAME=3170,3172-3177,3309
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_JOBID=463609
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_STARTTIME=1598412372
+Wed Aug 26 03:26:42 2020 +0000 (UTC) LOGNAME=zzli
+Wed Aug 26 03:26:42 2020 +0000 (UTC) USER=zzli
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_ENDTIME=1598423172
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_PARTSIZE=8
+Wed Aug 26 03:26:42 2020 +0000 (UTC) HOME=/home/zzli
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_JOBSIZE=8
+Wed Aug 26 03:26:42 2020 +0000 (UTC) COBALT_QUEUE=CVD_Research
+Wed Aug 26 03:26:42 2020 +0000 (UTC) 
+Wed Aug 26 03:26:42 2020 +0000 (UTC) Info: stdin received from /dev/null
+Wed Aug 26 03:26:42 2020 +0000 (UTC) Info: stdout sent to /gpfs/mira-home/zzli/tmp/redis-funcx/experiments/463609.output
+Wed Aug 26 03:26:42 2020 +0000 (UTC) Info: stderr sent to /gpfs/mira-home/zzli/tmp/redis-funcx/experiments/463609.error
+Wed Aug 26 03:26:42 2020 +0000 (UTC) 
+Wed Aug 26 06:26:54 2020 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

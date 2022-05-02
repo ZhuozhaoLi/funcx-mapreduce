@@ -1,0 +1,9 @@
+Starting Cobalt job script
+----Cobalt Nodefile: -----
+--------------------------
+Creating redis cluster
+=================================================================
+Constructing commands to create redis cluster
+Application 21533648 exit codes: 1
+Application 21533648 resources: utime ~0s, stime ~3s, Rss ~7156, inblocks ~1368, outblocks ~0
+ echo "yes" | redis-cli --cluster create 10.128.12.123:7000 10.128.12.126:7000 10.128.12.125:7000 --cluster-replicas 0

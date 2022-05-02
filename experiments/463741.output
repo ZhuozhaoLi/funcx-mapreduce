@@ -1,0 +1,698 @@
+Starting Cobalt job script
+----Cobalt Nodefile: -----
+--------------------------
+Creating redis cluster
+=================================================================
+Constructing commands to create redis cluster
+152159:C 26 Aug 2020 17:22:53.363 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+152159:C 26 Aug 2020 17:22:53.363 # Redis version=5.0.3, bits=64, commit=00000000, modified=0, pid=152159, just started
+152159:C 26 Aug 2020 17:22:53.363 # Configuration loaded
+152159:M 26 Aug 2020 17:22:53.368 * No cluster configuration found, I'm 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7000
+ |    `-._   `._    /     _.-'    |     PID: 152159
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+152159:M 26 Aug 2020 17:22:53.371 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+152159:M 26 Aug 2020 17:22:53.371 # Server initialized
+152159:M 26 Aug 2020 17:22:53.371 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+152159:M 26 Aug 2020 17:22:53.373 * Ready to accept connections
+152760:C 26 Aug 2020 17:22:53.434 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+152760:C 26 Aug 2020 17:22:53.434 # Redis version=5.0.3, bits=64, commit=00000000, modified=0, pid=152760, just started
+152760:C 26 Aug 2020 17:22:53.434 # Configuration loaded
+152139:C 26 Aug 2020 17:22:53.435 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+152139:C 26 Aug 2020 17:22:53.435 # Redis version=5.0.3, bits=64, commit=00000000, modified=0, pid=152139, just started
+152139:C 26 Aug 2020 17:22:53.435 # Configuration loaded
+152760:M 26 Aug 2020 17:22:53.440 * No cluster configuration found, I'm 3b9b725ae007d8889a9271280db3c496bd9f48e4
+152139:M 26 Aug 2020 17:22:53.440 * No cluster configuration found, I'm 8ad6a319f17116c55fe8048694835c4df405d282
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7000
+ |    `-._   `._    /     _.-'    |     PID: 152760
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7000
+ |    `-._   `._    /     _.-'    |     PID: 152139
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+152760:M 26 Aug 2020 17:22:53.443 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+152760:M 26 Aug 2020 17:22:53.443 # Server initialized
+152760:M 26 Aug 2020 17:22:53.443 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+152139:M 26 Aug 2020 17:22:53.443 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+152139:M 26 Aug 2020 17:22:53.443 # Server initialized
+152139:M 26 Aug 2020 17:22:53.443 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+152760:M 26 Aug 2020 17:22:53.445 * Ready to accept connections
+152139:M 26 Aug 2020 17:22:53.446 * Ready to accept connections
+ echo "yes" | redis-cli --cluster create 10.128.12.123:7000 10.128.12.126:7000 10.128.12.125:7000 --cluster-replicas 0
+>>> Performing hash slots allocation on 3 nodes...
+Master[0] -> Slots 0 - 5460
+Master[1] -> Slots 5461 - 10922
+Master[2] -> Slots 10923 - 16383
+M: 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6 10.128.12.123:7000
+   slots:[0-5460] (5461 slots) master
+M: 3b9b725ae007d8889a9271280db3c496bd9f48e4 10.128.12.126:7000
+   slots:[5461-10922] (5462 slots) master
+M: 8ad6a319f17116c55fe8048694835c4df405d282 10.128.12.125:7000
+   slots:[10923-16383] (5461 slots) master
+Can I set the above configuration? (type 'yes' to accept): 152159:M 26 Aug 2020 17:23:11.236 # configEpoch set to 1 via CLUSTER SET-CONFIG-EPOCH
+152760:M 26 Aug 2020 17:23:11.237 # configEpoch set to 2 via CLUSTER SET-CONFIG-EPOCH
+152139:M 26 Aug 2020 17:23:11.238 # configEpoch set to 3 via CLUSTER SET-CONFIG-EPOCH
+152159:M 26 Aug 2020 17:23:11.335 # IP address for this node updated to 10.128.12.123
+152139:M 26 Aug 2020 17:23:11.363 # IP address for this node updated to 10.128.12.125
+152760:M 26 Aug 2020 17:23:11.364 # IP address for this node updated to 10.128.12.126
+>>> Nodes configuration updated
+>>> Assign a different config epoch to each node
+>>> Sending CLUSTER MEET messages to join the cluster
+Waiting for the cluster to join
+..
+>>> Performing Cluster Check (using node 10.128.12.123:7000)
+M: 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6 10.128.12.123:7000
+   slots:[0-5460] (5461 slots) master
+M: 3b9b725ae007d8889a9271280db3c496bd9f48e4 10.128.12.126:7000
+   slots:[5461-10922] (5462 slots) master
+M: 8ad6a319f17116c55fe8048694835c4df405d282 10.128.12.125:7000
+   slots:[10923-16383] (5461 slots) master
+[OK] All nodes agree about slots configuration.
+>>> Check for open slots...
+>>> Check slots coverage...
+[OK] All 16384 slots covered.
+Starting funcx managers
+===================================================================
+152139:M 26 Aug 2020 17:23:16.158 # Cluster state changed: ok
+152760:M 26 Aug 2020 17:23:16.161 # Cluster state changed: ok
+152159:M 26 Aug 2020 17:23:16.191 # Cluster state changed: ok
+152760:M 26 Aug 2020 17:26:53.872 * Starting automatic rewriting of AOF on 6898192900% growth
+152760:M 26 Aug 2020 17:26:53.876 * Background append only file rewriting started by pid 152884
+152760:M 26 Aug 2020 17:26:54.929 * AOF rewrite child asks to stop sending diffs.
+152884:C 26 Aug 2020 17:26:54.929 * Parent agreed to stop sending diffs. Finalizing AOF...
+152884:C 26 Aug 2020 17:26:54.930 * Concatenating 0.19 MB of AOF diff received from parent.
+152884:C 26 Aug 2020 17:26:54.966 * SYNC append only file rewrite performed
+152884:C 26 Aug 2020 17:26:54.970 * AOF rewrite: 67 MB of memory used by copy-on-write
+152760:M 26 Aug 2020 17:26:55.153 * Background AOF rewrite terminated with success
+152760:M 26 Aug 2020 17:26:55.328 * Residual parent diff successfully flushed to the rewritten AOF (59.08 MB)
+152760:M 26 Aug 2020 17:26:55.331 * Background AOF rewrite finished successfully
+152760:M 26 Aug 2020 17:26:56.043 * Starting automatic rewriting of AOF on 124% growth
+152760:M 26 Aug 2020 17:26:56.054 * Background append only file rewriting started by pid 152886
+152159:M 26 Aug 2020 17:26:56.753 * Starting automatic rewriting of AOF on 6899354900% growth
+152159:M 26 Aug 2020 17:26:56.758 * Background append only file rewriting started by pid 152285
+152139:M 26 Aug 2020 17:26:56.833 * Starting automatic rewriting of AOF on 6800576800% growth
+152139:M 26 Aug 2020 17:26:56.836 * Background append only file rewriting started by pid 152266
+152760:M 26 Aug 2020 17:26:56.938 * Background AOF buffer size: 79 MB
+152760:M 26 Aug 2020 17:26:57.930 * Background AOF buffer size: 179 MB
+152139:M 26 Aug 2020 17:26:58.202 * AOF rewrite child asks to stop sending diffs.
+152266:C 26 Aug 2020 17:26:58.202 * Parent agreed to stop sending diffs. Finalizing AOF...
+152266:C 26 Aug 2020 17:26:58.202 * Concatenating 22.91 MB of AOF diff received from parent.
+152159:M 26 Aug 2020 17:26:58.423 * AOF rewrite child asks to stop sending diffs.
+152285:C 26 Aug 2020 17:26:58.423 * Parent agreed to stop sending diffs. Finalizing AOF...
+152285:C 26 Aug 2020 17:26:58.423 * Concatenating 30.15 MB of AOF diff received from parent.
+152266:C 26 Aug 2020 17:26:58.475 * SYNC append only file rewrite performed
+152266:C 26 Aug 2020 17:26:58.479 * AOF rewrite: 64 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 17:26:58.581 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 17:26:58.586 * Residual parent diff successfully flushed to the rewritten AOF (0.94 MB)
+152139:M 26 Aug 2020 17:26:58.590 * Background AOF rewrite finished successfully
+152285:C 26 Aug 2020 17:26:58.764 * SYNC append only file rewrite performed
+152285:C 26 Aug 2020 17:26:58.768 * AOF rewrite: 102 MB of memory used by copy-on-write
+152760:M 26 Aug 2020 17:26:58.831 * Background AOF buffer size: 279 MB
+152159:M 26 Aug 2020 17:26:58.879 * Background AOF rewrite terminated with success
+152159:M 26 Aug 2020 17:26:59.002 * Residual parent diff successfully flushed to the rewritten AOF (41.13 MB)
+152159:M 26 Aug 2020 17:26:59.006 * Background AOF rewrite finished successfully
+152760:M 26 Aug 2020 17:27:00.333 * AOF rewrite child asks to stop sending diffs.
+152886:C 26 Aug 2020 17:27:00.333 * Parent agreed to stop sending diffs. Finalizing AOF...
+152886:C 26 Aug 2020 17:27:00.334 * Concatenating 55.88 MB of AOF diff received from parent.
+152886:C 26 Aug 2020 17:27:00.914 * SYNC append only file rewrite performed
+152886:C 26 Aug 2020 17:27:00.923 * AOF rewrite: 240 MB of memory used by copy-on-write
+152760:M 26 Aug 2020 17:27:00.971 * Background AOF rewrite terminated with success
+152760:M 26 Aug 2020 17:27:02.037 * Residual parent diff successfully flushed to the rewritten AOF (362.49 MB)
+152760:M 26 Aug 2020 17:27:02.041 * Background AOF rewrite finished successfully
+152139:M 26 Aug 2020 17:27:02.354 * Starting automatic rewriting of AOF on 105% growth
+152139:M 26 Aug 2020 17:27:02.359 * Background append only file rewriting started by pid 152270
+152159:M 26 Aug 2020 17:27:03.089 * Starting automatic rewriting of AOF on 104% growth
+152159:M 26 Aug 2020 17:27:03.097 * Background append only file rewriting started by pid 152289
+152159:M 26 Aug 2020 17:27:04.490 * Background AOF buffer size: 80 MB
+152760:M 26 Aug 2020 17:27:05.263 * Starting automatic rewriting of AOF on 102% growth
+152760:M 26 Aug 2020 17:27:05.300 * Background append only file rewriting started by pid 152892
+152139:M 26 Aug 2020 17:27:05.434 * AOF rewrite child asks to stop sending diffs.
+152270:C 26 Aug 2020 17:27:05.434 * Parent agreed to stop sending diffs. Finalizing AOF...
+152270:C 26 Aug 2020 17:27:05.435 * Concatenating 51.56 MB of AOF diff received from parent.
+152270:C 26 Aug 2020 17:27:05.983 * SYNC append only file rewrite performed
+152270:C 26 Aug 2020 17:27:05.989 * AOF rewrite: 171 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 17:27:06.045 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 17:27:06.142 * Residual parent diff successfully flushed to the rewritten AOF (32.62 MB)
+152139:M 26 Aug 2020 17:27:06.146 * Background AOF rewrite finished successfully
+152760:M 26 Aug 2020 17:27:06.580 * Background AOF buffer size: 80 MB
+152159:M 26 Aug 2020 17:27:07.351 * AOF rewrite child asks to stop sending diffs.
+152289:C 26 Aug 2020 17:27:07.351 * Parent agreed to stop sending diffs. Finalizing AOF...
+152289:C 26 Aug 2020 17:27:07.352 * Concatenating 52.25 MB of AOF diff received from parent.
+152760:M 26 Aug 2020 17:27:07.455 * Background AOF buffer size: 180 MB
+152289:C 26 Aug 2020 17:27:08.009 * SYNC append only file rewrite performed
+152289:C 26 Aug 2020 17:27:08.017 * AOF rewrite: 163 MB of memory used by copy-on-write
+152159:M 26 Aug 2020 17:27:08.145 * Background AOF rewrite terminated with success
+152760:M 26 Aug 2020 17:27:08.268 * Background AOF buffer size: 280 MB
+152159:M 26 Aug 2020 17:27:08.568 * Residual parent diff successfully flushed to the rewritten AOF (143.67 MB)
+152159:M 26 Aug 2020 17:27:08.572 * Background AOF rewrite finished successfully
+152760:M 26 Aug 2020 17:27:09.027 * Background AOF buffer size: 380 MB
+152760:M 26 Aug 2020 17:27:09.869 * Background AOF buffer size: 480 MB
+152760:M 26 Aug 2020 17:27:10.748 * Background AOF buffer size: 580 MB
+152760:M 26 Aug 2020 17:27:11.387 * Background AOF buffer size: 680 MB
+152760:M 26 Aug 2020 17:27:12.220 * Background AOF buffer size: 780 MB
+152760:M 26 Aug 2020 17:27:13.097 * Background AOF buffer size: 879 MB
+152760:M 26 Aug 2020 17:27:14.016 # Background AOF buffer size: 979 MB
+152760:M 26 Aug 2020 17:27:14.818 * Background AOF buffer size: 1079 MB
+152159:M 26 Aug 2020 17:27:15.220 * Starting automatic rewriting of AOF on 101% growth
+152159:M 26 Aug 2020 17:27:15.238 * Background append only file rewriting started by pid 152296
+152139:M 26 Aug 2020 17:27:15.518 * Starting automatic rewriting of AOF on 100% growth
+152139:M 26 Aug 2020 17:27:15.528 * Background append only file rewriting started by pid 152277
+152760:M 26 Aug 2020 17:27:15.851 * Background AOF buffer size: 1179 MB
+152760:M 26 Aug 2020 17:27:16.772 * Background AOF buffer size: 1279 MB
+152760:M 26 Aug 2020 17:27:17.553 * Background AOF buffer size: 1379 MB
+152159:M 26 Aug 2020 17:27:17.587 * Background AOF buffer size: 80 MB
+152760:M 26 Aug 2020 17:27:18.430 * Background AOF buffer size: 1479 MB
+152760:M 26 Aug 2020 17:27:19.405 * Background AOF buffer size: 1579 MB
+152159:M 26 Aug 2020 17:27:20.396 * Background AOF buffer size: 179 MB
+152760:M 26 Aug 2020 17:27:20.464 * Background AOF buffer size: 1679 MB
+152760:M 26 Aug 2020 17:27:21.176 * Background AOF buffer size: 1779 MB
+152139:M 26 Aug 2020 17:27:21.542 * AOF rewrite child asks to stop sending diffs.
+152277:C 26 Aug 2020 17:27:21.543 * Parent agreed to stop sending diffs. Finalizing AOF...
+152277:C 26 Aug 2020 17:27:21.543 * Concatenating 59.50 MB of AOF diff received from parent.
+152760:M 26 Aug 2020 17:27:21.560 * Background AOF buffer size: 1774 MB
+152760:M 26 Aug 2020 17:27:21.596 * AOF rewrite child asks to stop sending diffs.
+152892:C 26 Aug 2020 17:27:21.597 * Parent agreed to stop sending diffs. Finalizing AOF...
+152892:C 26 Aug 2020 17:27:21.597 * Concatenating 15.88 MB of AOF diff received from parent.
+152892:C 26 Aug 2020 17:27:21.818 * SYNC append only file rewrite performed
+152892:C 26 Aug 2020 17:27:21.848 * AOF rewrite: 499 MB of memory used by copy-on-write
+152760:M 26 Aug 2020 17:27:22.027 * Background AOF rewrite terminated with success
+152277:C 26 Aug 2020 17:27:22.134 * SYNC append only file rewrite performed
+152277:C 26 Aug 2020 17:27:22.143 * AOF rewrite: 77 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 17:27:22.253 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 17:27:22.371 * Residual parent diff successfully flushed to the rewritten AOF (39.96 MB)
+152139:M 26 Aug 2020 17:27:22.375 * Background AOF rewrite finished successfully
+152159:M 26 Aug 2020 17:27:26.028 * AOF rewrite child asks to stop sending diffs.
+152296:C 26 Aug 2020 17:27:26.029 * Parent agreed to stop sending diffs. Finalizing AOF...
+152296:C 26 Aug 2020 17:27:26.029 * Concatenating 60.31 MB of AOF diff received from parent.
+152296:C 26 Aug 2020 17:27:26.616 * SYNC append only file rewrite performed
+152296:C 26 Aug 2020 17:27:26.632 * AOF rewrite: 108 MB of memory used by copy-on-write
+152159:M 26 Aug 2020 17:27:26.722 * Background AOF rewrite terminated with success
+152159:M 26 Aug 2020 17:27:27.230 * Residual parent diff successfully flushed to the rewritten AOF (172.12 MB)
+152159:M 26 Aug 2020 17:27:27.234 * Background AOF rewrite finished successfully
+152760:M 26 Aug 2020 17:27:27.411 * Residual parent diff successfully flushed to the rewritten AOF (1823.26 MB)
+152760:M 26 Aug 2020 17:27:27.414 * Background AOF rewrite finished successfully
+152139:M 26 Aug 2020 17:43:33.499 * Starting automatic rewriting of AOF on 107% growth
+152139:M 26 Aug 2020 17:43:33.513 * Background append only file rewriting started by pid 152770
+152139:M 26 Aug 2020 17:43:34.809 * Background AOF buffer size: 80 MB
+152159:M 26 Aug 2020 17:43:36.111 * Starting automatic rewriting of AOF on 103% growth
+152159:M 26 Aug 2020 17:43:36.132 * Background append only file rewriting started by pid 152790
+152139:M 26 Aug 2020 17:43:36.323 * Background AOF buffer size: 180 MB
+152139:M 26 Aug 2020 17:43:37.099 * AOF rewrite child asks to stop sending diffs.
+152770:C 26 Aug 2020 17:43:37.099 * Parent agreed to stop sending diffs. Finalizing AOF...
+152770:C 26 Aug 2020 17:43:37.100 * Concatenating 0.19 MB of AOF diff received from parent.
+152139:M 26 Aug 2020 17:43:37.133 * Background AOF buffer size: 279 MB
+152770:C 26 Aug 2020 17:43:37.153 * SYNC append only file rewrite performed
+152770:C 26 Aug 2020 17:43:37.164 * AOF rewrite: 256 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 17:43:37.259 * Background AOF rewrite terminated with success
+152159:M 26 Aug 2020 17:43:37.423 * Background AOF buffer size: 80 MB
+152139:M 26 Aug 2020 17:43:38.152 * Residual parent diff successfully flushed to the rewritten AOF (302.41 MB)
+152139:M 26 Aug 2020 17:43:38.157 * Background AOF rewrite finished successfully
+152159:M 26 Aug 2020 17:43:39.405 * Background AOF buffer size: 179 MB
+152159:M 26 Aug 2020 17:43:40.300 * Background AOF buffer size: 279 MB
+152159:M 26 Aug 2020 17:43:40.983 * Background AOF buffer size: 379 MB
+152139:M 26 Aug 2020 17:43:41.334 * Starting automatic rewriting of AOF on 102% growth
+152139:M 26 Aug 2020 17:43:41.362 * Background append only file rewriting started by pid 152775
+152159:M 26 Aug 2020 17:43:41.940 * Background AOF buffer size: 370 MB
+152159:M 26 Aug 2020 17:43:42.146 * AOF rewrite child asks to stop sending diffs.
+152790:C 26 Aug 2020 17:43:42.146 * Parent agreed to stop sending diffs. Finalizing AOF...
+152790:C 26 Aug 2020 17:43:42.147 * Concatenating 48.69 MB of AOF diff received from parent.
+152159:M 26 Aug 2020 17:43:42.238 * Background AOF buffer size: 371 MB
+152139:M 26 Aug 2020 17:43:42.242 * Background AOF buffer size: 79 MB
+152790:C 26 Aug 2020 17:43:42.659 * SYNC append only file rewrite performed
+152790:C 26 Aug 2020 17:43:42.677 * AOF rewrite: 273 MB of memory used by copy-on-write
+152159:M 26 Aug 2020 17:43:42.831 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 17:43:43.257 * Background AOF buffer size: 179 MB
+152159:M 26 Aug 2020 17:43:44.122 * Residual parent diff successfully flushed to the rewritten AOF (437.50 MB)
+152159:M 26 Aug 2020 17:43:44.127 * Background AOF rewrite finished successfully
+152139:M 26 Aug 2020 17:43:44.527 * Background AOF buffer size: 279 MB
+152139:M 26 Aug 2020 17:43:45.710 * Background AOF buffer size: 379 MB
+152139:M 26 Aug 2020 17:43:46.708 * Background AOF buffer size: 479 MB
+152139:M 26 Aug 2020 17:43:47.549 * Background AOF buffer size: 579 MB
+152139:M 26 Aug 2020 17:43:48.149 * Background AOF buffer size: 679 MB
+152159:M 26 Aug 2020 17:43:48.868 * Starting automatic rewriting of AOF on 100% growth
+152159:M 26 Aug 2020 17:43:48.910 * Background append only file rewriting started by pid 152797
+152139:M 26 Aug 2020 17:43:49.236 * Background AOF buffer size: 779 MB
+152159:M 26 Aug 2020 17:43:50.551 * Background AOF buffer size: 80 MB
+152139:M 26 Aug 2020 17:43:52.800 * Background AOF buffer size: 879 MB
+152139:M 26 Aug 2020 17:43:56.471 * AOF rewrite child asks to stop sending diffs.
+152775:C 26 Aug 2020 17:43:56.471 * Parent agreed to stop sending diffs. Finalizing AOF...
+152775:C 26 Aug 2020 17:43:56.471 * Concatenating 52.12 MB of AOF diff received from parent.
+152775:C 26 Aug 2020 17:43:56.977 * SYNC append only file rewrite performed
+152775:C 26 Aug 2020 17:43:57.001 * AOF rewrite: 435 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 17:43:57.181 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 17:43:59.755 * Residual parent diff successfully flushed to the rewritten AOF (870.58 MB)
+152139:M 26 Aug 2020 17:43:59.759 * Background AOF rewrite finished successfully
+152139:M 26 Aug 2020 17:43:59.860 * Asynchronous AOF fsync is taking too long (disk is busy?). Writing the AOF buffer without waiting for fsync to complete, this may slow down Redis.
+152159:M 26 Aug 2020 17:44:04.254 * Background AOF buffer size: 179 MB
+152159:M 26 Aug 2020 17:44:10.351 * AOF rewrite child asks to stop sending diffs.
+152797:C 26 Aug 2020 17:44:10.351 * Parent agreed to stop sending diffs. Finalizing AOF...
+152797:C 26 Aug 2020 17:44:10.351 * Concatenating 52.44 MB of AOF diff received from parent.
+152797:C 26 Aug 2020 17:44:10.869 * SYNC append only file rewrite performed
+152797:C 26 Aug 2020 17:44:10.903 * AOF rewrite: 281 MB of memory used by copy-on-write
+152159:M 26 Aug 2020 17:44:11.086 * Background AOF rewrite terminated with success
+152159:M 26 Aug 2020 17:44:11.590 * Residual parent diff successfully flushed to the rewritten AOF (170.79 MB)
+152159:M 26 Aug 2020 17:44:11.593 * Background AOF rewrite finished successfully
+152760:M 26 Aug 2020 18:35:38.269 * Starting automatic rewriting of AOF on 100% growth
+152760:M 26 Aug 2020 18:35:38.292 * Background append only file rewriting started by pid 154959
+152760:M 26 Aug 2020 18:35:39.969 * Background AOF buffer size: 79 MB
+152760:M 26 Aug 2020 18:35:42.321 * AOF rewrite child asks to stop sending diffs.
+154959:C 26 Aug 2020 18:35:42.321 * Parent agreed to stop sending diffs. Finalizing AOF...
+154959:C 26 Aug 2020 18:35:42.321 * Concatenating 51.50 MB of AOF diff received from parent.
+154959:C 26 Aug 2020 18:35:42.832 * SYNC append only file rewrite performed
+154959:C 26 Aug 2020 18:35:42.851 * AOF rewrite: 169 MB of memory used by copy-on-write
+152760:M 26 Aug 2020 18:35:42.999 * Background AOF rewrite terminated with success
+152760:M 26 Aug 2020 18:35:43.475 * Residual parent diff successfully flushed to the rewritten AOF (160.23 MB)
+152760:M 26 Aug 2020 18:35:43.480 * Background AOF rewrite finished successfully
+152159:M 26 Aug 2020 18:35:44.333 * Starting automatic rewriting of AOF on 102% growth
+152159:M 26 Aug 2020 18:35:44.356 * Background append only file rewriting started by pid 154363
+152159:M 26 Aug 2020 18:35:45.086 * Background AOF buffer size: 80 MB
+152159:M 26 Aug 2020 18:35:46.027 * Background AOF buffer size: 179 MB
+152159:M 26 Aug 2020 18:35:46.964 * Background AOF buffer size: 279 MB
+152760:M 26 Aug 2020 18:35:47.286 * Starting automatic rewriting of AOF on 101% growth
+152760:M 26 Aug 2020 18:35:47.323 * Background append only file rewriting started by pid 154964
+152159:M 26 Aug 2020 18:35:47.894 * Background AOF buffer size: 379 MB
+152760:M 26 Aug 2020 18:35:48.489 * Background AOF buffer size: 80 MB
+152159:M 26 Aug 2020 18:35:48.974 * Background AOF buffer size: 479 MB
+152159:M 26 Aug 2020 18:35:50.006 * Background AOF buffer size: 579 MB
+152760:M 26 Aug 2020 18:35:50.059 * Background AOF buffer size: 179 MB
+152159:M 26 Aug 2020 18:35:50.985 * Background AOF buffer size: 679 MB
+152139:M 26 Aug 2020 18:35:51.454 * Starting automatic rewriting of AOF on 100% growth
+152139:M 26 Aug 2020 18:35:51.490 * Background append only file rewriting started by pid 154349
+152760:M 26 Aug 2020 18:35:51.736 * Background AOF buffer size: 279 MB
+152159:M 26 Aug 2020 18:35:52.012 * Background AOF buffer size: 779 MB
+152139:M 26 Aug 2020 18:35:52.444 * Background AOF buffer size: 79 MB
+152159:M 26 Aug 2020 18:35:52.909 * Background AOF buffer size: 879 MB
+152760:M 26 Aug 2020 18:35:53.119 * Background AOF buffer size: 379 MB
+152139:M 26 Aug 2020 18:35:53.469 * Background AOF buffer size: 179 MB
+152159:M 26 Aug 2020 18:35:53.737 # Background AOF buffer size: 979 MB
+152760:M 26 Aug 2020 18:35:54.454 * Background AOF buffer size: 479 MB
+152139:M 26 Aug 2020 18:35:54.495 * Background AOF buffer size: 279 MB
+152159:M 26 Aug 2020 18:35:54.599 * Background AOF buffer size: 1079 MB
+152159:M 26 Aug 2020 18:35:55.426 * Background AOF buffer size: 1179 MB
+152139:M 26 Aug 2020 18:35:55.589 * Background AOF buffer size: 379 MB
+152760:M 26 Aug 2020 18:35:55.752 * Background AOF buffer size: 578 MB
+152159:M 26 Aug 2020 18:35:56.809 * AOF rewrite child asks to stop sending diffs.
+154363:C 26 Aug 2020 18:35:56.809 * Parent agreed to stop sending diffs. Finalizing AOF...
+154363:C 26 Aug 2020 18:35:56.809 * Concatenating 60.12 MB of AOF diff received from parent.
+152159:M 26 Aug 2020 18:35:56.884 * Background AOF buffer size: 1180 MB
+152139:M 26 Aug 2020 18:35:57.379 * Background AOF buffer size: 479 MB
+154363:C 26 Aug 2020 18:35:57.434 * SYNC append only file rewrite performed
+154363:C 26 Aug 2020 18:35:57.454 * AOF rewrite: 93 MB of memory used by copy-on-write
+152159:M 26 Aug 2020 18:35:57.571 * Background AOF rewrite terminated with success
+152760:M 26 Aug 2020 18:35:58.740 * AOF rewrite child asks to stop sending diffs.
+154964:C 26 Aug 2020 18:35:58.740 * Parent agreed to stop sending diffs. Finalizing AOF...
+154964:C 26 Aug 2020 18:35:58.740 * Concatenating 60.62 MB of AOF diff received from parent.
+154964:C 26 Aug 2020 18:35:59.342 * SYNC append only file rewrite performed
+154964:C 26 Aug 2020 18:35:59.372 * AOF rewrite: 107 MB of memory used by copy-on-write
+152760:M 26 Aug 2020 18:35:59.520 * Background AOF rewrite terminated with success
+152159:M 26 Aug 2020 18:36:01.289 * Residual parent diff successfully flushed to the rewritten AOF (1264.52 MB)
+152159:M 26 Aug 2020 18:36:01.293 * Background AOF rewrite finished successfully
+152760:M 26 Aug 2020 18:36:01.308 * Residual parent diff successfully flushed to the rewritten AOF (605.71 MB)
+152760:M 26 Aug 2020 18:36:01.312 * Background AOF rewrite finished successfully
+152159:M 26 Aug 2020 18:36:01.399 * Asynchronous AOF fsync is taking too long (disk is busy?). Writing the AOF buffer without waiting for fsync to complete, this may slow down Redis.
+152760:M 26 Aug 2020 18:36:01.413 * Asynchronous AOF fsync is taking too long (disk is busy?). Writing the AOF buffer without waiting for fsync to complete, this may slow down Redis.
+152139:M 26 Aug 2020 18:36:02.094 * Background AOF buffer size: 579 MB
+152139:M 26 Aug 2020 18:36:03.067 * Background AOF buffer size: 679 MB
+152139:M 26 Aug 2020 18:36:03.978 * Background AOF buffer size: 779 MB
+152139:M 26 Aug 2020 18:36:04.787 * Background AOF buffer size: 879 MB
+152139:M 26 Aug 2020 18:36:05.573 # Background AOF buffer size: 979 MB
+152139:M 26 Aug 2020 18:36:06.382 * Background AOF buffer size: 1079 MB
+152139:M 26 Aug 2020 18:36:07.216 * Background AOF buffer size: 1179 MB
+152139:M 26 Aug 2020 18:36:08.036 * Background AOF buffer size: 1279 MB
+152139:M 26 Aug 2020 18:36:08.928 * Background AOF buffer size: 1379 MB
+152139:M 26 Aug 2020 18:36:09.372 * AOF rewrite child asks to stop sending diffs.
+154349:C 26 Aug 2020 18:36:09.372 * Parent agreed to stop sending diffs. Finalizing AOF...
+154349:C 26 Aug 2020 18:36:09.373 * Concatenating 1.12 MB of AOF diff received from parent.
+154349:C 26 Aug 2020 18:36:09.431 * SYNC append only file rewrite performed
+154349:C 26 Aug 2020 18:36:09.460 * AOF rewrite: 26 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 18:36:09.575 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 18:36:13.879 * Residual parent diff successfully flushed to the rewritten AOF (1459.24 MB)
+152139:M 26 Aug 2020 18:36:13.883 * Background AOF rewrite finished successfully
+152139:M 26 Aug 2020 18:36:13.995 * Asynchronous AOF fsync is taking too long (disk is busy?). Writing the AOF buffer without waiting for fsync to complete, this may slow down Redis.
+152760:M 26 Aug 2020 18:36:15.590 * Starting automatic rewriting of AOF on 100% growth
+152760:M 26 Aug 2020 18:36:15.672 * Background append only file rewriting started by pid 154980
+152760:M 26 Aug 2020 18:36:16.438 * Background AOF buffer size: 80 MB
+152159:M 26 Aug 2020 18:36:16.893 * Starting automatic rewriting of AOF on 100% growth
+152159:M 26 Aug 2020 18:36:16.982 * Background append only file rewriting started by pid 154381
+152159:M 26 Aug 2020 18:36:17.799 * Background AOF buffer size: 79 MB
+152760:M 26 Aug 2020 18:36:18.713 * Background AOF buffer size: 180 MB
+152159:M 26 Aug 2020 18:36:18.734 * Background AOF buffer size: 179 MB
+152159:M 26 Aug 2020 18:36:19.640 * Background AOF buffer size: 279 MB
+152760:M 26 Aug 2020 18:36:20.415 * Background AOF buffer size: 280 MB
+152159:M 26 Aug 2020 18:36:20.526 * Background AOF buffer size: 379 MB
+152159:M 26 Aug 2020 18:36:21.371 * Background AOF buffer size: 479 MB
+152159:M 26 Aug 2020 18:36:22.176 * Background AOF buffer size: 579 MB
+152760:M 26 Aug 2020 18:36:22.525 * Background AOF buffer size: 379 MB
+152159:M 26 Aug 2020 18:36:23.025 * Background AOF buffer size: 679 MB
+152760:M 26 Aug 2020 18:36:23.635 * Background AOF buffer size: 479 MB
+152159:M 26 Aug 2020 18:36:23.830 * Background AOF buffer size: 779 MB
+152760:M 26 Aug 2020 18:36:24.499 * Background AOF buffer size: 579 MB
+152159:M 26 Aug 2020 18:36:24.616 * Background AOF buffer size: 879 MB
+152760:M 26 Aug 2020 18:36:25.316 * Background AOF buffer size: 679 MB
+152159:M 26 Aug 2020 18:36:25.520 # Background AOF buffer size: 979 MB
+152159:M 26 Aug 2020 18:36:26.338 * Background AOF buffer size: 1079 MB
+152760:M 26 Aug 2020 18:36:26.615 * Background AOF buffer size: 779 MB
+152159:M 26 Aug 2020 18:36:27.138 * Background AOF buffer size: 1179 MB
+152760:M 26 Aug 2020 18:36:27.856 * Background AOF buffer size: 879 MB
+152159:M 26 Aug 2020 18:36:27.982 * Background AOF buffer size: 1279 MB
+152159:M 26 Aug 2020 18:36:28.837 * Background AOF buffer size: 1379 MB
+152760:M 26 Aug 2020 18:36:29.449 # Background AOF buffer size: 979 MB
+152159:M 26 Aug 2020 18:36:29.658 * Background AOF buffer size: 1479 MB
+152159:M 26 Aug 2020 18:36:30.535 * Background AOF buffer size: 1579 MB
+152760:M 26 Aug 2020 18:36:30.535 * Background AOF buffer size: 1079 MB
+152159:M 26 Aug 2020 18:36:31.379 * Background AOF buffer size: 1679 MB
+152760:M 26 Aug 2020 18:36:31.901 * Background AOF buffer size: 1179 MB
+152159:M 26 Aug 2020 18:36:32.237 * Background AOF buffer size: 1779 MB
+152159:M 26 Aug 2020 18:36:33.071 * Background AOF buffer size: 1879 MB
+152760:M 26 Aug 2020 18:36:33.496 * Background AOF buffer size: 1279 MB
+152139:M 26 Aug 2020 18:36:33.781 * Starting automatic rewriting of AOF on 100% growth
+152139:M 26 Aug 2020 18:36:33.888 * Background append only file rewriting started by pid 154371
+152159:M 26 Aug 2020 18:36:33.956 # Background AOF buffer size: 1979 MB
+152760:M 26 Aug 2020 18:36:34.583 * Background AOF buffer size: 1379 MB
+152139:M 26 Aug 2020 18:36:34.681 * Background AOF buffer size: 80 MB
+152159:M 26 Aug 2020 18:36:34.758 * Background AOF buffer size: 2079 MB
+152139:M 26 Aug 2020 18:36:35.528 * Background AOF buffer size: 180 MB
+152159:M 26 Aug 2020 18:36:35.610 * Background AOF buffer size: 2179 MB
+152760:M 26 Aug 2020 18:36:35.810 * Background AOF buffer size: 1479 MB
+152139:M 26 Aug 2020 18:36:36.339 * Background AOF buffer size: 279 MB
+152159:M 26 Aug 2020 18:36:36.471 * Background AOF buffer size: 2279 MB
+152760:M 26 Aug 2020 18:36:36.916 * Background AOF buffer size: 1579 MB
+152139:M 26 Aug 2020 18:36:37.271 * Background AOF buffer size: 379 MB
+152159:M 26 Aug 2020 18:36:37.369 * Background AOF buffer size: 2379 MB
+152159:M 26 Aug 2020 18:36:38.193 * Background AOF buffer size: 2479 MB
+152760:M 26 Aug 2020 18:36:38.193 * Background AOF buffer size: 1679 MB
+152139:M 26 Aug 2020 18:36:38.260 * Background AOF buffer size: 479 MB
+152159:M 26 Aug 2020 18:36:39.097 * Background AOF buffer size: 2579 MB
+152139:M 26 Aug 2020 18:36:39.400 * Background AOF buffer size: 579 MB
+152760:M 26 Aug 2020 18:36:39.904 * Background AOF buffer size: 1779 MB
+152159:M 26 Aug 2020 18:36:39.941 * Background AOF buffer size: 2679 MB
+152139:M 26 Aug 2020 18:36:40.520 * Background AOF buffer size: 679 MB
+152159:M 26 Aug 2020 18:36:40.815 * Background AOF buffer size: 2779 MB
+152760:M 26 Aug 2020 18:36:41.529 * Background AOF buffer size: 1879 MB
+152139:M 26 Aug 2020 18:36:41.725 * Background AOF buffer size: 779 MB
+152159:M 26 Aug 2020 18:36:41.741 * Background AOF buffer size: 2879 MB
+152159:M 26 Aug 2020 18:36:42.610 # Background AOF buffer size: 2979 MB
+152139:M 26 Aug 2020 18:36:42.629 * Background AOF buffer size: 879 MB
+152760:M 26 Aug 2020 18:36:42.728 # Background AOF buffer size: 1979 MB
+152159:M 26 Aug 2020 18:36:43.524 * Background AOF buffer size: 3079 MB
+152139:M 26 Aug 2020 18:36:43.600 # Background AOF buffer size: 979 MB
+152760:M 26 Aug 2020 18:36:44.082 * Background AOF buffer size: 2078 MB
+152159:M 26 Aug 2020 18:36:44.413 * Background AOF buffer size: 3179 MB
+152139:M 26 Aug 2020 18:36:44.832 * Background AOF buffer size: 1079 MB
+152159:M 26 Aug 2020 18:36:45.358 * Background AOF buffer size: 3279 MB
+152760:M 26 Aug 2020 18:36:45.578 * Background AOF buffer size: 2178 MB
+152139:M 26 Aug 2020 18:36:45.877 * Background AOF buffer size: 1179 MB
+152159:M 26 Aug 2020 18:36:46.180 * Background AOF buffer size: 3379 MB
+152760:M 26 Aug 2020 18:36:46.999 * Background AOF buffer size: 2278 MB
+152159:M 26 Aug 2020 18:36:47.077 * Background AOF buffer size: 3479 MB
+152139:M 26 Aug 2020 18:36:47.143 * Background AOF buffer size: 1279 MB
+152159:M 26 Aug 2020 18:36:47.935 * Background AOF buffer size: 3579 MB
+152139:M 26 Aug 2020 18:36:48.245 * Background AOF buffer size: 1379 MB
+152760:M 26 Aug 2020 18:36:48.548 * Background AOF buffer size: 2378 MB
+152159:M 26 Aug 2020 18:36:48.855 * Background AOF buffer size: 3679 MB
+152139:M 26 Aug 2020 18:36:49.132 * Background AOF buffer size: 1479 MB
+152159:M 26 Aug 2020 18:36:49.733 * Background AOF buffer size: 3779 MB
+152760:M 26 Aug 2020 18:36:49.862 * Background AOF buffer size: 2478 MB
+152760:M 26 Aug 2020 18:36:49.878 * AOF rewrite child asks to stop sending diffs.
+154980:C 26 Aug 2020 18:36:49.878 * Parent agreed to stop sending diffs. Finalizing AOF...
+154980:C 26 Aug 2020 18:36:49.878 * Concatenating 1.31 MB of AOF diff received from parent.
+154980:C 26 Aug 2020 18:36:49.918 * SYNC append only file rewrite performed
+154980:C 26 Aug 2020 18:36:49.981 * AOF rewrite: 55 MB of memory used by copy-on-write
+152760:M 26 Aug 2020 18:36:50.180 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 18:36:50.181 * Background AOF buffer size: 1579 MB
+152159:M 26 Aug 2020 18:36:50.585 * Background AOF buffer size: 3879 MB
+152159:M 26 Aug 2020 18:36:51.375 # Background AOF buffer size: 3979 MB
+152139:M 26 Aug 2020 18:36:55.648 * Marking node 3b9b725ae007d8889a9271280db3c496bd9f48e4 as failing (quorum reached).
+152139:M 26 Aug 2020 18:36:55.648 # Cluster state changed: fail
+152159:M 26 Aug 2020 18:36:55.649 * Marking node 3b9b725ae007d8889a9271280db3c496bd9f48e4 as failing (quorum reached).
+152159:M 26 Aug 2020 18:36:55.649 # Cluster state changed: fail
+152760:M 26 Aug 2020 18:36:57.625 * Residual parent diff successfully flushed to the rewritten AOF (2506.30 MB)
+152760:M 26 Aug 2020 18:36:57.629 * Background AOF rewrite finished successfully
+152159:M 26 Aug 2020 18:37:05.691 * Clear FAIL state for node 3b9b725ae007d8889a9271280db3c496bd9f48e4: is reachable again and nobody is serving its slots after some time.
+152159:M 26 Aug 2020 18:37:05.691 # Cluster state changed: ok
+152139:M 26 Aug 2020 18:37:05.981 * Clear FAIL state for node 3b9b725ae007d8889a9271280db3c496bd9f48e4: is reachable again and nobody is serving its slots after some time.
+152139:M 26 Aug 2020 18:37:05.981 # Cluster state changed: ok
+152159:M 26 Aug 2020 18:37:06.441 * Background AOF buffer size: 4078 MB
+152139:M 26 Aug 2020 18:37:06.993 * Background AOF buffer size: 1679 MB
+152159:M 26 Aug 2020 18:37:07.534 * Background AOF buffer size: 4178 MB
+152139:M 26 Aug 2020 18:37:08.270 * Background AOF buffer size: 1779 MB
+152159:M 26 Aug 2020 18:37:08.388 * Background AOF buffer size: 4278 MB
+152159:M 26 Aug 2020 18:37:09.211 * Background AOF buffer size: 4378 MB
+152139:M 26 Aug 2020 18:37:09.331 * Background AOF buffer size: 1879 MB
+152159:M 26 Aug 2020 18:37:10.091 * Background AOF buffer size: 4478 MB
+152139:M 26 Aug 2020 18:37:10.369 # Background AOF buffer size: 1979 MB
+152159:M 26 Aug 2020 18:37:10.909 * Background AOF buffer size: 4578 MB
+152139:M 26 Aug 2020 18:37:11.476 * Background AOF buffer size: 2079 MB
+152159:M 26 Aug 2020 18:37:11.778 * Background AOF buffer size: 4678 MB
+152139:M 26 Aug 2020 18:37:12.560 * Background AOF buffer size: 2179 MB
+152159:M 26 Aug 2020 18:37:13.483 * AOF rewrite child asks to stop sending diffs.
+154381:C 26 Aug 2020 18:37:13.483 * Parent agreed to stop sending diffs. Finalizing AOF...
+154381:C 26 Aug 2020 18:37:13.483 * Concatenating 58.19 MB of AOF diff received from parent.
+152159:M 26 Aug 2020 18:37:14.020 * Background AOF buffer size: 4771 MB
+154381:C 26 Aug 2020 18:37:14.082 * SYNC append only file rewrite performed
+154381:C 26 Aug 2020 18:37:14.163 * AOF rewrite: 194 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 18:37:14.346 * Background AOF buffer size: 2279 MB
+152159:M 26 Aug 2020 18:37:14.406 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 18:37:20.806 * Marking node 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6 as failing (quorum reached).
+152139:M 26 Aug 2020 18:37:20.806 # Cluster state changed: fail
+152760:M 26 Aug 2020 18:37:20.807 * FAIL message received from 8ad6a319f17116c55fe8048694835c4df405d282 about 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6
+152760:M 26 Aug 2020 18:37:20.807 # Cluster state changed: fail
+152159:M 26 Aug 2020 18:37:28.915 * Residual parent diff successfully flushed to the rewritten AOF (4816.64 MB)
+152159:M 26 Aug 2020 18:37:28.919 * Background AOF rewrite finished successfully
+152159:M 26 Aug 2020 18:37:29.033 * Asynchronous AOF fsync is taking too long (disk is busy?). Writing the AOF buffer without waiting for fsync to complete, this may slow down Redis.
+152139:M 26 Aug 2020 18:37:30.854 * Clear FAIL state for node 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6: is reachable again and nobody is serving its slots after some time.
+152139:M 26 Aug 2020 18:37:30.854 # Cluster state changed: ok
+152760:M 26 Aug 2020 18:37:32.725 * Clear FAIL state for node 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6: is reachable again and nobody is serving its slots after some time.
+152760:M 26 Aug 2020 18:37:32.725 # Cluster state changed: ok
+152139:M 26 Aug 2020 18:37:37.596 * Background AOF buffer size: 2378 MB
+152139:M 26 Aug 2020 18:37:42.518 * AOF rewrite child asks to stop sending diffs.
+154371:C 26 Aug 2020 18:37:42.518 * Parent agreed to stop sending diffs. Finalizing AOF...
+154371:C 26 Aug 2020 18:37:42.518 * Concatenating 62.00 MB of AOF diff received from parent.
+154371:C 26 Aug 2020 18:37:43.123 * SYNC append only file rewrite performed
+154371:C 26 Aug 2020 18:37:43.219 * AOF rewrite: 117 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 18:37:43.478 * Background AOF rewrite terminated with success
+152139:M 26 Aug 2020 18:37:50.711 * Residual parent diff successfully flushed to the rewritten AOF (2411.77 MB)
+152139:M 26 Aug 2020 18:37:50.715 * Background AOF rewrite finished successfully
+152760:M 26 Aug 2020 18:50:29.425 * Starting automatic rewriting of AOF on 100% growth
+152760:M 26 Aug 2020 18:50:29.516 * Background append only file rewriting started by pid 155412
+152760:M 26 Aug 2020 18:50:30.245 * Background AOF buffer size: 80 MB
+152760:M 26 Aug 2020 18:50:31.073 * Background AOF buffer size: 180 MB
+152760:M 26 Aug 2020 18:50:31.835 * Background AOF buffer size: 280 MB
+152760:M 26 Aug 2020 18:50:32.736 * Background AOF buffer size: 380 MB
+152760:M 26 Aug 2020 18:50:33.746 * Background AOF buffer size: 480 MB
+152760:M 26 Aug 2020 18:50:34.581 * Background AOF buffer size: 580 MB
+152760:M 26 Aug 2020 18:50:35.810 * Background AOF buffer size: 680 MB
+152760:M 26 Aug 2020 18:50:37.382 * Background AOF buffer size: 779 MB
+152760:M 26 Aug 2020 18:50:38.332 * Background AOF buffer size: 879 MB
+152760:M 26 Aug 2020 18:50:39.086 # Background AOF buffer size: 979 MB
+152760:M 26 Aug 2020 18:50:39.960 * Background AOF buffer size: 1079 MB
+152760:M 26 Aug 2020 18:50:40.757 * Background AOF buffer size: 1179 MB
+152760:M 26 Aug 2020 18:50:41.866 * Background AOF buffer size: 1279 MB
+152760:M 26 Aug 2020 18:50:42.873 * Background AOF buffer size: 1379 MB
+152760:M 26 Aug 2020 18:50:43.820 * Background AOF buffer size: 1479 MB
+152760:M 26 Aug 2020 18:50:44.744 * Background AOF buffer size: 1579 MB
+152760:M 26 Aug 2020 18:50:45.653 * Background AOF buffer size: 1679 MB
+152760:M 26 Aug 2020 18:50:46.697 * Background AOF buffer size: 1779 MB
+152760:M 26 Aug 2020 18:50:47.816 * Background AOF buffer size: 1879 MB
+152760:M 26 Aug 2020 18:50:49.256 # Background AOF buffer size: 1979 MB
+152760:M 26 Aug 2020 18:50:50.944 * Background AOF buffer size: 2079 MB
+152760:M 26 Aug 2020 18:50:51.903 * Background AOF buffer size: 2179 MB
+152760:M 26 Aug 2020 18:50:52.763 * Background AOF buffer size: 2279 MB
+152760:M 26 Aug 2020 18:50:53.579 * Background AOF buffer size: 2379 MB
+152760:M 26 Aug 2020 18:50:54.491 * Background AOF buffer size: 2479 MB
+152760:M 26 Aug 2020 18:50:55.370 * Background AOF buffer size: 2579 MB
+152760:M 26 Aug 2020 18:50:56.230 * Background AOF buffer size: 2679 MB
+152139:M 26 Aug 2020 18:50:56.422 * Starting automatic rewriting of AOF on 100% growth
+152139:M 26 Aug 2020 18:50:56.539 * Background append only file rewriting started by pid 154806
+152760:M 26 Aug 2020 18:50:57.263 * Background AOF buffer size: 2779 MB
+152139:M 26 Aug 2020 18:50:57.642 * Background AOF buffer size: 79 MB
+152760:M 26 Aug 2020 18:50:58.080 * Background AOF buffer size: 2879 MB
+152139:M 26 Aug 2020 18:50:58.672 * Background AOF buffer size: 179 MB
+152760:M 26 Aug 2020 18:50:58.888 # Background AOF buffer size: 2979 MB
+152760:M 26 Aug 2020 18:50:59.739 * Background AOF buffer size: 3079 MB
+152139:M 26 Aug 2020 18:50:59.887 * Background AOF buffer size: 279 MB
+152760:M 26 Aug 2020 18:51:00.687 * Background AOF buffer size: 3179 MB
+152139:M 26 Aug 2020 18:51:01.471 * Background AOF buffer size: 379 MB
+152760:M 26 Aug 2020 18:51:01.519 * Background AOF buffer size: 3279 MB
+152760:M 26 Aug 2020 18:51:02.369 * Background AOF buffer size: 3379 MB
+152139:M 26 Aug 2020 18:51:02.699 * Background AOF buffer size: 479 MB
+152760:M 26 Aug 2020 18:51:03.127 * Background AOF buffer size: 3479 MB
+152139:M 26 Aug 2020 18:51:03.667 * Background AOF buffer size: 579 MB
+152760:M 26 Aug 2020 18:51:04.030 * Background AOF buffer size: 3579 MB
+152139:M 26 Aug 2020 18:51:04.624 * Background AOF buffer size: 679 MB
+152760:M 26 Aug 2020 18:51:04.887 * Background AOF buffer size: 3679 MB
+152139:M 26 Aug 2020 18:51:05.592 * Background AOF buffer size: 779 MB
+152760:M 26 Aug 2020 18:51:05.695 * Background AOF buffer size: 3779 MB
+152760:M 26 Aug 2020 18:51:06.504 * Background AOF buffer size: 3879 MB
+152139:M 26 Aug 2020 18:51:06.760 * Background AOF buffer size: 879 MB
+152760:M 26 Aug 2020 18:51:07.365 # Background AOF buffer size: 3978 MB
+152139:M 26 Aug 2020 18:51:08.000 # Background AOF buffer size: 979 MB
+152760:M 26 Aug 2020 18:51:08.241 * Background AOF buffer size: 4078 MB
+152139:M 26 Aug 2020 18:51:08.994 * Background AOF buffer size: 1079 MB
+152760:M 26 Aug 2020 18:51:09.087 * Background AOF buffer size: 4178 MB
+152760:M 26 Aug 2020 18:51:09.094 * AOF rewrite child asks to stop sending diffs.
+155412:C 26 Aug 2020 18:51:09.095 * Parent agreed to stop sending diffs. Finalizing AOF...
+155412:C 26 Aug 2020 18:51:09.095 * Concatenating 1.31 MB of AOF diff received from parent.
+155412:C 26 Aug 2020 18:51:09.175 * SYNC append only file rewrite performed
+155412:C 26 Aug 2020 18:51:09.255 * AOF rewrite: 31 MB of memory used by copy-on-write
+152760:M 26 Aug 2020 18:51:09.400 * Background AOF rewrite terminated with success
+152159:M 26 Aug 2020 18:51:14.668 * Marking node 3b9b725ae007d8889a9271280db3c496bd9f48e4 as failing (quorum reached).
+152159:M 26 Aug 2020 18:51:14.668 # Cluster state changed: fail
+152139:M 26 Aug 2020 18:51:14.669 * FAIL message received from 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6 about 3b9b725ae007d8889a9271280db3c496bd9f48e4
+152139:M 26 Aug 2020 18:51:14.670 # Cluster state changed: fail
+152760:M 26 Aug 2020 18:51:21.971 * Residual parent diff successfully flushed to the rewritten AOF (4212.72 MB)
+152760:M 26 Aug 2020 18:51:21.975 * Background AOF rewrite finished successfully
+152159:M 26 Aug 2020 18:51:24.728 * Clear FAIL state for node 3b9b725ae007d8889a9271280db3c496bd9f48e4: is reachable again and nobody is serving its slots after some time.
+152159:M 26 Aug 2020 18:51:24.728 # Cluster state changed: ok
+152139:M 26 Aug 2020 18:51:26.497 * Clear FAIL state for node 3b9b725ae007d8889a9271280db3c496bd9f48e4: is reachable again and nobody is serving its slots after some time.
+152139:M 26 Aug 2020 18:51:26.497 # Cluster state changed: ok
+152139:M 26 Aug 2020 18:51:28.027 * Background AOF buffer size: 1178 MB
+152139:M 26 Aug 2020 18:51:29.347 * Background AOF buffer size: 1278 MB
+152139:M 26 Aug 2020 18:51:30.418 * Background AOF buffer size: 1378 MB
+152159:M 26 Aug 2020 18:51:30.919 * Starting automatic rewriting of AOF on 100% growth
+152159:M 26 Aug 2020 18:51:31.109 * Background append only file rewriting started by pid 154841
+152139:M 26 Aug 2020 18:51:31.628 * Background AOF buffer size: 1478 MB
+152159:M 26 Aug 2020 18:51:31.879 * Background AOF buffer size: 80 MB
+152139:M 26 Aug 2020 18:51:32.641 * Background AOF buffer size: 1578 MB
+152159:M 26 Aug 2020 18:51:32.940 * Background AOF buffer size: 180 MB
+152159:M 26 Aug 2020 18:51:33.883 * Background AOF buffer size: 280 MB
+152139:M 26 Aug 2020 18:51:33.895 * Background AOF buffer size: 1678 MB
+152139:M 26 Aug 2020 18:51:34.809 * Background AOF buffer size: 1778 MB
+152159:M 26 Aug 2020 18:51:34.966 * Background AOF buffer size: 379 MB
+152139:M 26 Aug 2020 18:51:35.807 * Background AOF buffer size: 1878 MB
+152159:M 26 Aug 2020 18:51:35.885 * Background AOF buffer size: 479 MB
+152139:M 26 Aug 2020 18:51:36.682 # Background AOF buffer size: 1978 MB
+152159:M 26 Aug 2020 18:51:36.801 * Background AOF buffer size: 579 MB
+152139:M 26 Aug 2020 18:51:37.622 * Background AOF buffer size: 2078 MB
+152159:M 26 Aug 2020 18:51:38.019 * Background AOF buffer size: 679 MB
+152139:M 26 Aug 2020 18:51:38.909 * Background AOF buffer size: 2178 MB
+152159:M 26 Aug 2020 18:51:39.356 * Background AOF buffer size: 779 MB
+152139:M 26 Aug 2020 18:51:40.373 * Background AOF buffer size: 2278 MB
+152159:M 26 Aug 2020 18:51:40.400 * Background AOF buffer size: 879 MB
+152139:M 26 Aug 2020 18:51:41.344 * Background AOF buffer size: 2378 MB
+152159:M 26 Aug 2020 18:51:41.564 # Background AOF buffer size: 979 MB
+152139:M 26 Aug 2020 18:51:42.562 * Background AOF buffer size: 2478 MB
+152159:M 26 Aug 2020 18:51:42.627 * Background AOF buffer size: 1079 MB
+152139:M 26 Aug 2020 18:51:43.588 * Background AOF buffer size: 2578 MB
+152159:M 26 Aug 2020 18:51:43.955 * Background AOF buffer size: 1179 MB
+152159:M 26 Aug 2020 18:51:44.991 * Background AOF buffer size: 1279 MB
+152139:M 26 Aug 2020 18:51:44.999 * Background AOF buffer size: 2678 MB
+152139:M 26 Aug 2020 18:51:46.006 * Background AOF buffer size: 2778 MB
+152159:M 26 Aug 2020 18:51:46.104 * Background AOF buffer size: 1379 MB
+152159:M 26 Aug 2020 18:51:46.961 * Background AOF buffer size: 1479 MB
+152139:M 26 Aug 2020 18:51:47.230 * Background AOF buffer size: 2878 MB
+152139:M 26 Aug 2020 18:51:48.041 # Background AOF buffer size: 2978 MB
+152159:M 26 Aug 2020 18:51:48.142 * Background AOF buffer size: 1579 MB
+152139:M 26 Aug 2020 18:51:49.217 * Background AOF buffer size: 3078 MB
+152159:M 26 Aug 2020 18:51:49.231 * Background AOF buffer size: 1679 MB
+152139:M 26 Aug 2020 18:51:50.448 * Background AOF buffer size: 3178 MB
+152159:M 26 Aug 2020 18:51:50.512 * Background AOF buffer size: 1779 MB
+152139:M 26 Aug 2020 18:51:51.621 * Background AOF buffer size: 3278 MB
+152159:M 26 Aug 2020 18:51:51.631 * Background AOF buffer size: 1879 MB
+152139:M 26 Aug 2020 18:51:52.831 * Background AOF buffer size: 3378 MB
+152159:M 26 Aug 2020 18:51:52.921 # Background AOF buffer size: 1979 MB
+152139:M 26 Aug 2020 18:51:54.051 * Background AOF buffer size: 3478 MB
+152159:M 26 Aug 2020 18:51:54.297 * Background AOF buffer size: 2079 MB
+152159:M 26 Aug 2020 18:51:55.467 * Background AOF buffer size: 2179 MB
+152139:M 26 Aug 2020 18:51:55.536 * Background AOF buffer size: 3578 MB
+152139:M 26 Aug 2020 18:51:56.670 * Background AOF buffer size: 3678 MB
+152159:M 26 Aug 2020 18:51:56.732 * Background AOF buffer size: 2279 MB
+152139:M 26 Aug 2020 18:51:59.060 * Background AOF buffer size: 3778 MB
+152159:M 26 Aug 2020 18:51:59.309 * Background AOF buffer size: 2379 MB
+152139:M 26 Aug 2020 18:51:59.470 * AOF rewrite child asks to stop sending diffs.
+154806:C 26 Aug 2020 18:51:59.470 * Parent agreed to stop sending diffs. Finalizing AOF...
+154806:C 26 Aug 2020 18:51:59.470 * Concatenating 1.75 MB of AOF diff received from parent.
+154806:C 26 Aug 2020 18:51:59.537 * SYNC append only file rewrite performed
+154806:C 26 Aug 2020 18:51:59.638 * AOF rewrite: 30 MB of memory used by copy-on-write
+152139:M 26 Aug 2020 18:51:59.806 * Background AOF rewrite terminated with success
+152760:M 26 Aug 2020 18:52:05.638 * Marking node 8ad6a319f17116c55fe8048694835c4df405d282 as failing (quorum reached).
+152760:M 26 Aug 2020 18:52:05.638 # Cluster state changed: fail
+152159:M 26 Aug 2020 18:52:05.639 * FAIL message received from 3b9b725ae007d8889a9271280db3c496bd9f48e4 about 8ad6a319f17116c55fe8048694835c4df405d282
+152159:M 26 Aug 2020 18:52:05.639 # Cluster state changed: fail
+152139:M 26 Aug 2020 18:52:11.243 * Residual parent diff successfully flushed to the rewritten AOF (3816.06 MB)
+152139:M 26 Aug 2020 18:52:11.248 * Background AOF rewrite finished successfully
+152139:M 26 Aug 2020 18:52:11.350 * Asynchronous AOF fsync is taking too long (disk is busy?). Writing the AOF buffer without waiting for fsync to complete, this may slow down Redis.
+152159:M 26 Aug 2020 18:52:17.141 * Clear FAIL state for node 8ad6a319f17116c55fe8048694835c4df405d282: is reachable again and nobody is serving its slots after some time.
+152159:M 26 Aug 2020 18:52:17.141 # Cluster state changed: ok
+152760:M 26 Aug 2020 18:52:17.703 * Clear FAIL state for node 8ad6a319f17116c55fe8048694835c4df405d282: is reachable again and nobody is serving its slots after some time.
+152760:M 26 Aug 2020 18:52:17.703 # Cluster state changed: ok
+152159:M 26 Aug 2020 18:53:03.056 * AOF rewrite child asks to stop sending diffs.
+154841:C 26 Aug 2020 18:53:03.056 * Parent agreed to stop sending diffs. Finalizing AOF...
+154841:C 26 Aug 2020 18:53:03.056 * Concatenating 61.94 MB of AOF diff received from parent.
+154841:C 26 Aug 2020 18:53:03.652 * SYNC append only file rewrite performed
+154841:C 26 Aug 2020 18:53:03.808 * AOF rewrite: 86 MB of memory used by copy-on-write
+152159:M 26 Aug 2020 18:53:04.105 * Background AOF rewrite terminated with success
+152760:M 26 Aug 2020 18:53:10.007 * Marking node 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6 as failing (quorum reached).
+152760:M 26 Aug 2020 18:53:10.007 # Cluster state changed: fail
+152139:M 26 Aug 2020 18:53:10.008 * FAIL message received from 3b9b725ae007d8889a9271280db3c496bd9f48e4 about 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6
+152139:M 26 Aug 2020 18:53:10.008 # Cluster state changed: fail
+152159:M 26 Aug 2020 18:53:11.344 * Residual parent diff successfully flushed to the rewritten AOF (2395.97 MB)
+152159:M 26 Aug 2020 18:53:11.348 * Background AOF rewrite finished successfully
+152139:M 26 Aug 2020 18:53:20.161 * Clear FAIL state for node 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6: is reachable again and nobody is serving its slots after some time.
+152139:M 26 Aug 2020 18:53:20.161 # Cluster state changed: ok
+152760:M 26 Aug 2020 18:53:21.062 * Clear FAIL state for node 49bb90c1fda90c7b7b3aa1fe3a441cf49af6c7d6: is reachable again and nobody is serving its slots after some time.
+152760:M 26 Aug 2020 18:53:21.062 # Cluster state changed: ok
+PROCESS_WORKER_POOL exiting
+PROCESS_WORKER_POOL exiting
+PROCESS_WORKER_POOL exiting
+PROCESS_WORKER_POOL exiting
+PROCESS_WORKER_POOL exiting
+Application 21539805 resources: utime ~34582s, stime ~8875s, Rss ~3775068, inblocks ~230100476, outblocks ~147686424
+152159:signal-handler (1598468243) Received SIGTERM scheduling shutdown...
+152159:signal-handler (1598468243) Received SIGTERM scheduling shutdown...
+152159:signal-handler (1598468243) Received SIGTERM scheduling shutdown...
+152159:signal-handler (1598468243) Received SIGTERM scheduling shutdown...
+152139:signal-handler (1598468243) Received SIGTERM scheduling shutdown...152139152139
+:signal-handler (:signal-handler (152139152760:signal-handler (1598468243) Received SIGTERM scheduling shutdown...152760
+:signal-handler (1598468243) Received SIGTERM scheduling shutdown...
+152760:signal-handler (1598468243) Received SIGTERM scheduling shutdown...
+15984682431598468243:signal-handler () 152760:signal-handler (1598468243) Received SIGTERM scheduling shutdown...
+) 1598468243Received SIGTERM scheduling shutdown...Received SIGTERM scheduling shutdown...) 
+
+Received SIGTERM scheduling shutdown...
+Application 21539801 exit signals: Terminated
+Application 21539801 resources: utime ~0s, stime ~11s, Rss ~7156, inblocks ~1408, outblocks ~0
